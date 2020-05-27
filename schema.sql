@@ -1,0 +1,41 @@
+USE ET_db;
+
+CREATE TABLE Department
+(
+ ID INT(100)
+ AUTO_INCREMENT NOT NULL,
+name VARCHAR
+ (45) NOT NULL,
+PRIMARY KEY
+ (ID)
+);
+
+ CREATE TABLE Employees
+ (
+  ID INT(10)
+  AUTO_INCREMENT NOT NULL,
+ First_name VARCHAR
+  (45) NOT NULL,
+ Last_name VARCHAR
+  (45) NOT NULL,
+ Role_id INT
+  (100) NOT NULL,
+ Manager_id INT
+  (100),
+ PRIMARY KEY
+  (ID)
+);
+
+  CREATE TABLE Roles
+  (
+   ID INT (10)
+   AUTO_INCREMENT NOT NULL,
+ Position VARCHAR
+   (30) NOT NULL,
+ SALARY INTEGER
+   (20) NOT NULL,
+ Department_id INT
+   (100) NOT NULL, 
+ PRIMARY KEY
+   (ID)
+);
